@@ -29,20 +29,22 @@ export const ContentCreatorCard: React.FC<ContentCreatorCardProps> = ({
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
       <div className="relative z-10 mb-6 flex w-full flex-row items-center justify-between">
         <span className="text-3xl font-bold">{name}</span>
-        <div className="flex flex-row gap-x-4">
+        <div className="flex flex-row items-center gap-x-4">
           <Link to={`/${id}`}>
-            <button className="rounded-lg bg-green-500 px-4 py-2 hover:bg-green-600">
+            {/* <button className="rounded-lg bg-green-500 px-4 py-2 hover:bg-green-600">
               <span className="text-md font-bold uppercase tracking-wider text-white">
                 View
               </span>
-            </button>
+            </button> */}
+            <img src="/info.svg" className="h-[25px] w-[25px]" />
           </Link>
           <Link to={`/edit/${id}`}>
-            <button className="rounded-lg bg-green-500 px-4 py-2 hover:bg-green-600">
+            {/* <button className="rounded-lg bg-green-500 px-4 py-2 hover:bg-green-600">
               <span className="text-md font-bold uppercase tracking-wider text-white">
                 Edit
               </span>
-            </button>
+            </button> */}
+            <img src="/edit.svg" className="h-[25px] w-[25px]" />
           </Link>
         </div>
       </div>
